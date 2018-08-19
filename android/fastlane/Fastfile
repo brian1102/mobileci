@@ -1,0 +1,190 @@
+fastlane_version "2.64.1"
+
+default_platform :android
+
+platform :android do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Submit a new yojee dev build Build to Crashlytics Beta"
+  lane :yojeeDev do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleYojeeDevRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new yojee staging Build to Crashlytics Beta"
+  lane :yojeeStaging do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleYojeeStagingRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new yojee product Build to Crashlytics Beta"
+  lane :yojeeProd do
+    changelog = prompt(
+      text: "Important! Please enter your version's change log and type END to commit:",
+      multi_line_end_keyword: "END"
+    )
+    gradle(task: "assembleYojeeProdRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new scharff dev build Build to Crashlytics Beta"
+  lane :scharffDev do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleScharffDevRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new scharff dev build Build to Crashlytics Beta"
+  lane :scharffDemo do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleScharffDemoRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+  
+  desc "Submit a new scharff staging Build to Crashlytics Beta"
+  lane :scharffStaging do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleScharffStagingRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new tasman demo Build to Crashlytics Beta"
+  lane :tasmanDemo do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleTasmanDemoRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new ups demo Build to Crashlytics Beta"
+  lane :upsDemo do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleUpsDemoRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new yojee demo Build to Crashlytics Beta"
+  lane :yojeeDemo do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleYojeeDemoRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+
+  desc "Submit a new tasman alpha Build to Crashlytics Beta"
+  lane :tasmanDev do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleTasmanDevRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  desc "Submit a new tasman beta Build to Crashlytics Beta"
+  lane :tasmanStaging do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleTasmanStagingRelease")
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+desc "Submit a new scharff product Build to Crashlytics Beta"
+  lane :scharffProd do
+    changelog = File.read("./../../changelog.txt")
+    gradle(task: "assembleScharffProdRelease")
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+
+  desc "Deploy a new yojee version to the Google Play"
+  lane :yojeeDeploy do
+    gradle(task: "assembleYojeeProdRelease")
+    supply
+  end
+
+  desc "Deploy a new scharff version to the Google Play"
+  lane :scharffDeploy do
+    gradle(task: "assembleScharffProdRelease")
+    supply
+  end
+
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end

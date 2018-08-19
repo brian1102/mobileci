@@ -1,0 +1,3 @@
+export const FETCH_DAILY_STATUS = 'yojee/status/FETCH_DAILY_STATUS'
+export const FETCH_DAILY_STATUS_SUCCESS = 'yojee/status/FETCH_DAILY_STATUS_SUCCESS'
+export const FETCH_DAILY_STATUS_FAILED = 'yojee/status/FETCH_DAILY_STATUS_FAILED'

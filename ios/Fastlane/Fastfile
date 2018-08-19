@@ -1,0 +1,237 @@
+fastlane_version "2.64.1"
+
+default_platform :ios
+
+platform :ios do
+  lane :yojeeDev do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'YojeeDev',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.driverapp.dev" => "com.yojee.driverapp.dev.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :yojeeStaging do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'YojeeStaging',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.driverapp.staging" => "com.yojee.driverapp.staging.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :scharffDev do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'ScharffDev',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.scharff.dev" => "com.yojee.scharff.dev.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+
+  lane :scharffDemo do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'ScharffDemo',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.scharff.dev" => "com.yojee.scharff.dev.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :scharffStaging do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'ScharffStaging',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.scharff.staging" => "com.yojee.scharff.staging.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :scharffProd do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'ScharffProd',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.scharff" => "com.yojee.scharff.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    # groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      # groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :tasmanDemo do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'TasmanDemo',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.tasman.demo" => "com.yojee.tasman.demo.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :yojeeDemo do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'YojeeDemo',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.driverapp.demo" => "com.yojee.driverapp.demo.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+  lane :upsDemo do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'UPSDemo',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.ups.demo" => "com.yojee.ups.demo.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :tasmanDev do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'TasmanDev',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.tasman.dev" => "com.yojee.tasman.dev.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+
+  lane :tasmanStaging do |values|
+    changelog = File.read("./../../changelog.txt")
+    gym(
+        scheme: 'TasmanStaging',
+        export_method: 'ad-hoc',
+        export_options: {
+            provisioningProfiles: { 
+                "com.yojee.tasman.staging" => "com.yojee.tasman.staging.adhoc",
+            }
+        },
+        
+        export_xcargs: '-allowProvisioningUpdates',
+    )
+    groups = ['qa', 'yojee_mobile_developers']
+    crashlytics(
+      notes: changelog,
+      groups: groups,
+      notifications: true
+    )
+  end
+end
+

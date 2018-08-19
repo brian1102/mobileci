@@ -1,0 +1,8 @@
+{
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.semi": false,
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 80
+}

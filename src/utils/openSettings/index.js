@@ -1,0 +1,1 @@
+export { openLocationSettings } from './openSettings'

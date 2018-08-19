@@ -1,0 +1,125 @@
+{
+  "pagination": {
+    "total_pages": 1,
+    "total_count": 2,
+    "limit_value": 20,
+    "current_page": 1
+  },
+  "data": [
+    
+    {
+      "type": "pickup",
+      "to": "2018-03-22T16:14:06.000000Z",
+      "task_group_id": 1849,
+      "state": "created",
+      "start_time": null,
+      "position": 1,
+      "order_item_id": 274,
+      "lng": 106.6913373,
+      "lat": 10.785092,
+      "item": {
+        "width": 1,
+        "weight": 1,
+        "volumetric_weight": 10,
+        "length": 1,
+        "height": 1,
+        "global_tracking_number": "Y-C0ZJPQ"
+      },
+      "id": 513,
+      "from": "2018-03-22T15:14:06.000000Z",
+      "description": "Gift",
+      "contact": {
+        "phone": "+6581551123",
+        "name": "jens"
+      },
+      "completion_time": null,
+      "address": "40 Pham Ngoc Thach"
+    },
+    {
+      "type": "dropoff",
+      "to": "2018-03-23T16:14:06.000000Z",
+      "task_group_id": 1849,
+      "state": "created",
+      "start_time": null,
+      "position": 0,
+      "order_item_id": 274,
+      "lng": 106.7510233,
+      "lat": 10.864105,
+      "item": {
+        "width": 1,
+        "weight": 1,
+        "volumetric_weight": 10,
+        "length": 1,
+        "height": 1,
+        "global_tracking_number": "Y-C0ZJPQ"
+      },
+      "id": 514,
+      "from": "2018-03-23T15:14:06.000000Z",
+      "description": "Gift",
+      "contact": {
+        "phone": "+6581551123",
+        "name": "jens15"
+      },
+      "completion_time": null,
+      "address": "39579 duong so 9, Linh Tay, Thu Duc"
+    },
+    {
+      "worker_id": 3,
+      "type": "pickup",
+      "to": "2018-03-14T07:00:00.000000",
+      "task_group_id": 147,
+      "state": "accepted",
+      "start_time": null,
+      "position": 0,
+      "order_item_id": 146,
+      "lng": 106.6913373,
+      "lat": 10.785092,
+      "item": {
+        "width": 1,
+        "weight": null,
+        "volumetric_weight": null,
+        "global_tracking_number": "Y-TTVFPQ",
+        "length": 1,
+        "height": 1
+      },
+      "id": 291,
+      "from": "2018-03-14T03:00:00.000000",
+      "description": null,
+      "contact": {
+        "phone": "+8493330349",
+        "name": "khoa"
+      },
+      "completion_time": null,
+      "address": "40 Pham Ngoc Thach P6"
+    },
+    {
+      "worker_id": 3,
+      "type": "dropoff",
+      "to": "2018-03-14T11:00:00.000000",
+      "task_group_id": 147,
+      "state": "accepted",
+      "start_time": null,
+      "position": 0,
+      "order_item_id": 146,
+      "lng": 106.7510233,
+      "lat": 10.824105,
+      "item": {
+        "width": 1,
+        "weight": null,
+        "volumetric_weight": null,
+        "global_tracking_number": "Y-TTVFPQ",
+        "length": 1,
+        "height": 1
+      },
+      "id": 292,
+      "from": "2018-03-14T07:00:00.000000",
+      "description": null,
+      "contact": {
+        "phone": "+84933303223",
+        "name": "aaa fasf"
+      },
+      "completion_time": null,
+      "address": "Bien Hoa Dong Nai"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export const SET_LANGUAGE = 'yojee/setting/SET_LANGUAGE'

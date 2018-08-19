@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0620"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "NO"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "#!/bin/sh&#10;BRAND=&quot;yojee&quot;&#10;ENVIRONMENT=&quot;demo&quot;&#10;&#10;&#10;FOLDER=$BRAND&quot;_$ENVIRONMENT&quot;&#10;CONFIG_FILE=&quot;.env.$BRAND.$ENVIRONMENT&quot;&#10;#copy config for rnconfig&#10;echo $CONFIG_FILE &gt; /tmp/envfile&#10;# dealing with google plist&#10;GOOGLE_PLIST_FILE=&quot;$PROJECT_DIR/$FOLDER/GoogleService-Info.plist&quot;&#10;cp $GOOGLE_PLIST_FILE $PROJECT_DIR/NewDriverYojee&#10;exec &gt; ${PROJECT_DIR}/prebuild.log&#10;echo &quot;Google plist file:&quot;&#10;echo $GOOGLE_PLIST_FILE&#10;echo &quot;Env name:&quot;&#10;echo $CONFIG_FILE">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+                     BuildableName = "DriverYojee Alpha.app"
+                     BlueprintName = "NewDriverYojee"
+                     ReferencedContainer = "container:NewDriverYojee.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83CBBA2D1A601D0E00E9B192"
+               BuildableName = "libReact.a"
+               BlueprintName = "React"
+               ReferencedContainer = "container:../node_modules/react-native/React/React.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "DriverYojee Alpha.app"
+               BlueprintName = "NewDriverYojee"
+               ReferencedContainer = "container:NewDriverYojee.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "NewDriverYojeeTests.xctest"
+               BlueprintName = "NewDriverYojeeTests"
+               ReferencedContainer = "container:NewDriverYojee.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Yojee-Demo-Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "DriverYojee Alpha.app"
+            BlueprintName = "NewDriverYojee"
+            ReferencedContainer = "container:NewDriverYojee.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Yojee-Demo-Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "DriverYojee Alpha.app"
+            BlueprintName = "NewDriverYojee"
+            ReferencedContainer = "container:NewDriverYojee.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Yojee-Demo-Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "DriverYojee Alpha.app"
+            BlueprintName = "NewDriverYojee"
+            ReferencedContainer = "container:NewDriverYojee.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Yojee-Demo-Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Yojee-Demo-Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

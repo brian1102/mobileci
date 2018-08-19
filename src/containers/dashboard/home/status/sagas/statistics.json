@@ -1,0 +1,9 @@
+{
+  "message": "Got statistics",
+  "data": {
+    "failed": 4,
+    "completed": 5,
+    "accepted": 3,
+    "assigned": 20
+  }
+}

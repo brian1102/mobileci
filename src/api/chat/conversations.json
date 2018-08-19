@@ -1,0 +1,38 @@
+[
+  {
+    "contentType": 1,
+    "message": "This is a test message",
+    "groupId": null,
+    "displayName": [
+      "Kevin"
+    ],
+    "channel": {
+      "key": null
+    },
+    "createdAtTime": "2018-03-04 09:00:00",
+    "fileMeta": {
+      "name": ""
+    },
+    "filePaths": [],
+    "unreadCount": 2,
+    "contactIds": "hau.vophuoc"
+  },
+  {
+    "contentType": 1,
+    "message": "This is a seconds message",
+    "groupId": null,
+    "displayName": [
+      "Kevin"
+    ],
+    "channel": {
+      "key": null
+    },
+    "createdAtTime": "2018-03-04 09:00:00",
+    "fileMeta": {
+      "name": ""
+    },
+    "filePaths": [],
+    "unreadCount": 3,
+    "contactIds": "hau.vophuoc"
+  }
+]

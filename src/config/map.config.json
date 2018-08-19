@@ -1,0 +1,89 @@
+ [
+  {
+  "elementType": "labels",
+  "stylers": [
+              {
+              "saturation": -30
+              },
+              {
+              "lightness": 20
+              },
+              {
+              "visibility": "simplified"
+              }
+              ]
+  },
+  {
+  "featureType": "administrative",
+  "stylers": [
+              {
+              "visibility": "simplified"
+              }
+              ]
+  },
+  {
+  "featureType": "administrative",
+  "elementType": "geometry",
+  "stylers": [
+              {
+              "visibility": "off"
+              }
+              ]
+  },
+  {
+  "featureType": "landscape",
+  "stylers": [
+              {
+              "visibility": "simplified"
+              }
+              ]
+  },
+  {
+  "featureType": "landscape.natural",
+  "stylers": [
+              {
+              "visibility": "off"
+              }
+              ]
+  },
+  {
+  "featureType": "poi",
+  "stylers": [
+              {
+              "visibility": "off"
+              }
+              ]
+  },
+  {
+  "featureType": "road",
+  "stylers": [
+              {
+              "saturation": -5
+              }
+              ]
+  },
+  {
+  "featureType": "road.highway",
+  "stylers": [
+              {
+              "weight": 1
+              }
+              ]
+  },
+  {
+  "featureType": "transit.station",
+  "stylers": [
+              {
+              "visibility": "off"
+              }
+              ]
+  },
+  {
+  "featureType": "water",
+  "stylers": [
+              {
+              "color": "#c8c9c7"
+              }
+              ]
+  }
+  ]

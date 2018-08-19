@@ -1,0 +1,365 @@
+{
+  "project_info": {
+    "project_number": "293520095887",
+    "firebase_url": "https://sendyojee.firebaseio.com",
+    "project_id": "sendyojee",
+    "storage_bucket": "sendyojee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:2266e67bbb31b937",
+        "android_client_info": {
+          "package_name": "com.yojee.driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:ee4ba2d670448a42",
+        "android_client_info": {
+          "package_name": "com.yojee.driverapp.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:1764d72a3ebf3af2",
+        "android_client_info": {
+          "package_name": "com.yojee.driverapp.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:11a42cffa1c6f79c",
+        "android_client_info": {
+          "package_name": "com.yojee.lionparcel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:f60bc3a148c0581f",
+        "android_client_info": {
+          "package_name": "com.yojee.rajajet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-smonhh54lsqo9r6085rk4ekns9ujpv36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yojee.rajajet",
+            "certificate_hash": "8a665d24428e253e8988ade464dc1ad23e378733"
+          }
+        },
+        {
+          "client_id": "293520095887-9ml1a2votfjat6kkfhjrk66evraur8us.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yojee.rajajet",
+            "certificate_hash": "a2d481da4492ac14be46bb136748d4ce49d8b216"
+          }
+        },
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "293520095887-3e0t5hb3u9bvhml63fan0psuq1qnu370.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yojee.tasman.demo"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:ac4bcc91d44fc07e",
+        "android_client_info": {
+          "package_name": "com.yojee.scharff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:19980b85e838754c",
+        "android_client_info": {
+          "package_name": "com.yojee.scharff.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:8ac00e06c7bb8065",
+        "android_client_info": {
+          "package_name": "com.yojee.scharff.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:dea21a115fd2c7d3",
+        "android_client_info": {
+          "package_name": "com.yojee.tasman.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520095887:android:acb27eac062b849d",
+        "android_client_info": {
+          "package_name": "com.yojee.trackdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293520095887-61mpgaqd6dh8h36h38ldc1rshj0c7ef7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yojee.trackdriver",
+            "certificate_hash": "46fc248b4b700cf554617e220dcfa662e33fb555"
+          }
+        },
+        {
+          "client_id": "293520095887-shuq905921gaohp9li1s8osi75lv4801.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yojee.trackdriver",
+            "certificate_hash": "8a665d24428e253e8988ade464dc1ad23e378733"
+          }
+        },
+        {
+          "client_id": "293520095887-trc9r0u9d7kfppmv8478jiq3446cuh6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE0gwXysGA4f9RtPtlJEwtMV0NQs03qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

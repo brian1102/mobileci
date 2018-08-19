@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "character": "P",
+    "title": "Pickup Location",
+    "description": "Historial Library & Museum, 543344 Singapore",
+    "style": {
+      "circleColor": "blue"
+    }
+  },
+  {
+    "id": 2,
+    "character": "P",
+    "title": "Pickup Location",
+    "description": "Historial Library & Museum, 543344 Singapore",
+    "style": {
+      "circleColor": "blue"
+    }
+  },
+  {
+    "id": 3,
+    "character": "D",
+    "title": "Dropdown Location",
+    "description": "Raffles Place, 445563 Singapore",
+    "style": {
+      "circleColor": "red"
+    }
+  }
+]
